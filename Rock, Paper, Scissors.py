@@ -42,10 +42,10 @@ player1 = 0
 player2 = 0
 p2name = ""
 win.attributes("-topmost", False)
-score = Label(c, text="Click the top to begin", anchor=CENTER, font=("Helvetica", 24), padx=50, pady=50)
+score = Label(c, text="Click on the top to begin", anchor=CENTER, font=("Helvetica", 24), padx=50, pady=50)
 score.pack()
 twoplayers = simpledialog.askstring("Player", "Enter 1 for single-player and 2 for two-player") == "2"
 p1name = simpledialog.askstring("Name", "What is the name of your first player?")
 if twoplayers == True:
-    p2name = simpledialog.askstring("Name", "What is the name of your second player")
+    p2name = simpledialog.askstring("Name", "What is the name of your second player?")
 game()
